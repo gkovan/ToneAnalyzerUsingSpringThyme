@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Handling Form Submission</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor="black">
+<h1 style="color:white">What's Your Tone?</h1>
+<p style="color:white">This application will analyze the tone of the sentence you provide and send you a text message based on the tone.</p>
+<p style="color:white">This demonstrates that artificial intelligence for tone analysis is advanced enough to automatically recognize tones in sentences and automatically take an appropriate action.</p>
+
+	<h1>Form</h1>
+	<form action="#" th:action="@{/whatsyourtone}" th:object="${appData}"
+		method="post">
+		
+		<p style="color:white">
+			Type in a sentence: <br>
+			<input type="text" size=50 th:field="*{sentence}" /> <br>
+		</p>
+		<p style="color:white">
+			 Phone number: <br>
+			<input type="text" size=10 th:field="*{phonenumber}" /> <br>
+			
+		</p>
+
+		<p>
+			<input type="submit" value="Submit" /> <input type="reset"
+				value="Reset" />
+		</p>
+	</form>
+</body>
+</html>

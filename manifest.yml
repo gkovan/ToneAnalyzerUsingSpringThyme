@@ -1,0 +1,9 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: ToneAnalyzerProject
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: ./target/gs-handling-form-submission-0.1.0.jar
+  memory: 1024M
+  random-route: true

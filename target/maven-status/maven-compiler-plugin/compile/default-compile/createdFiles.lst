@@ -1,0 +1,8 @@
+hello/Greeting.class
+hello/Application.class
+hello/services/TwilioSendSMSMessageImpl.class
+hello/services/WatsonToneAnalyzerImpl.class
+hello/services/TwilioSendSMSMessage.class
+hello/GreetingController.class
+hello/domain/AppData.class
+hello/services/WatsonToneAnalyzer.class
